@@ -1,8 +1,8 @@
-FROM --platform=i386 i386/ubuntu:lubuntu
+FROM --platform=i386 i386/ubuntu:bionic
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get -y upgrade \
-    && apt-get -y install curl \
+    && apt-get -y install lubuntu-desktop curl \
     && apt-get -y install build-essential python3 openjdk-11-jdk \
     && apt-get -y install nodejs npm
 
